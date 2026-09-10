@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main() {
+    int n;
+    float sum = 0.0;
+    
+    printf("Input the number of terms: ");
+    scanf("%d", &n);
+    
+    printf("1/1");
+    
+    for (int i = 2; i <= n; i++) {
+        printf(" + 1/%d", i);
+        sum += (float)1 / i;
+    }
+    
+    printf("\nSum of Series upto %d terms: %f\n", n, (sum + 1.0));
+    
+    return 0;
+}
